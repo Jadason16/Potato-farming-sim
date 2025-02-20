@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="src/building.js"></script>
+        <script src="src/upgrade.js"></script>
+        <script src="src/tractor.js"></script>
+        <script src="src/main.js"></script>
+        <title>potato farming simulator</title>
+    </head>
+    <body>
+        <header>
+            <h1>potato farming simulator</h1>
+            <h2>
+                just farm potatos... 
+            </h2>
+        </header>
+
+        <div class="outer">
+            <div class="click">
+                <h3>Score: <span class="score" id="score">0</span></h3>
+
+                <button type="button" onclick="scorePlusPlus()"farmbutton>
+            </div>
+
+            <div class="store">
+                <div class="buildings">
+                    <div class="store-title">
+                        <h4>Buildings:</h4>
+                    </div>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buypitchfork"
+                        onclick="juicer.purchase()"
+                    >
+                        Buy pitchfork
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buypotatofarmer"
+                        onclick="sugar.purchase()"
+                    >
+                        Buy Potato farmer
+                    </button>
+
+                    <!-- Add more building buttons here -->
+                </div>
+                <div class="upgrades">
+                    <div class="store-title">
+                        <h4>Upgrades:</h4>
+                    </div>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buytractorI"
+                        onclick="swoleForearms1.purchase()"
+                    >
+                        Buy tractor
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
